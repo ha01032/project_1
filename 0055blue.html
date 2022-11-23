@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sidebar.css" />
+    <link rel="stylesheet" href="index.css" />
+
+    <script>const toggleSidebar = () => document.body.classList.toggle("open");</script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body style="background-color: rgba(4, 142, 255, 0.76)">
+    <!--상단바 시작-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-info text-dark bg-opacity-25"
+        style="height:10vh; background-color: rgba(135, 207, 235, 0.521) !important;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="001main.html" style="font-size:xx-large">°Clothes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <li class="nav-item">
+                        <a class="nav-link" href="002intro.html" style="color:white">소개</a>
+                    </li>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false" style="color:white">기온별 옷</a>
+                        <div class="dropdown-menu" style="background-color: rgb(51,153,255) !important;">
+                            <a class="dropdown-item" href="0051red.html" style="color:red">27°C ↑</a>
+                            <a class="dropdown-item" href="0052orange.html" style="color:orange">22°C ~ 27°C</a>
+                            <a class="dropdown-item" href="0053yellow.html" style="color:yellow">16°C ~ 22°C</a>
+                            <a class="dropdown-item" href="0054green.html" style="color:green">9°C ~ 16°C</a>
+                            <a class="dropdown-item" href="0055blue.html" style="color:blue">5°C ~ 9°C</a>
+                            <a class="dropdown-item" href="0056purple.html" style="color:purple">5°C ↓</a>
+
+                        </div>
+                    </li>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <li class="nav-item dropdown" style="color:white">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false" style="color:white">게시판</a>
+                        <div class="dropdown-menu" style="background-color:rgb(51,153,255) !important;">
+                            <a class="dropdown-item" href="0061free.html">자유게시판</a>
+                            <a class="dropdown-item" href="0062announce.html">공지사항</a>
+                            <a class="dropdown-item" href="0063request.html">건의사항</a>
+                        </div>
+                    </li>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="007best.html" style="color:white"> 베스트</a>
+                    </li>
+                    &nbsp&nbsp&nbsp
+                </ul>
+                <form class="d-flex">
+                    <a class="nav-link" href="004signup.html" style="color:white"> 회원가입</a>
+                    &nbsp&nbsp&nbsp
+                    <a class="nav-link" href="003login.html" style="color:white"> 로그인</a>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--상단바 끝-->
+
+    <!--사이드바 시작-->
+    <aside class="sidebar" style="position: fixed;">
+        <div class="sidebar-inner">
+            <header class="sidebar-header">
+                <button type="button" class="sidebar-burger" onclick="toggleSidebar()"></button>
+                <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" color="#ffffff">
+                    <path
+                        d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12c0 1.821.487 3.53 1.338 5L2.5 21.5l4.5-.838A9.955 9.955 0 0012 22z"
+                        stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <span>기온별 옷</span>
+            </header>
+
+
+
+            <nav class="sidebar-nav">
+                <img src="sun5.jpg" width="40" height="40" style="margin-left: 90px">
+
+
+
+                <button type="button" onclick="location.href = '0051red.html'">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgba(231, 76, 60, 0.85)"
+                        class="bi bi-stop-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M5 3.5h6A1.5 1.5 0 0 1 12.5 5v6a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 11V5A1.5 1.5 0 0 1 5 3.5z" />
+                    </svg>
+                    <span>27°C ↑</span>
+                </button>
+                <p>↕ 7월 8월 ↕</p>
+
+
+
+                <button type="button" onclick="location.href = '0052orange.html'">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgba(243, 156, 18, 0.74)"
+                        class="bi bi-stop-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M5 3.5h6A1.5 1.5 0 0 1 12.5 5v6a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 11V5A1.5 1.5 0 0 1 5 3.5z" />
+                    </svg>
+                    <span style="animation-delay: 0.1s">22°C ~ 27°C</span>
+                </button>
+                <p>↕ 6월 9월 ↕</p>
+
+
+
+                <button type="button" onclick="location.href = '0053yellow.html'">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgba(241, 196, 15, 0.6)"
+                        class="bi bi-stop-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M5 3.5h6A1.5 1.5 0 0 1 12.5 5v6a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 11V5A1.5 1.5 0 0 1 5 3.5z" />
+                    </svg>
+                    <span style="animation-delay: 0.2s">16°C ~ 22°C</span>
+                </button>
+                <p>↕ 4월 5월 10월 ↕</p>
+
+
+
+                <button type="button" onclick="location.href = '0054green.html'">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgba(46, 204, 113, 0.51)"
+                        class="bi bi-stop-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M5 3.5h6A1.5 1.5 0 0 1 12.5 5v6a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 11V5A1.5 1.5 0 0 1 5 3.5z" />
+                    </svg>
+                    <span style="animation-delay: 0.3s">9°C ~ 16°C</span>
+                </button>
+                <p>↕ 3월 11월 ↕</p>
+
+
+
+                <button type="button" onclick="location.href = '0055blue.html'">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgba(52, 152, 219, 0.49)"
+                        class="bi bi-stop-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M5 3.5h6A1.5 1.5 0 0 1 12.5 5v6a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 11V5A1.5 1.5 0 0 1 5 3.5z" />
+                    </svg>
+                    <span style="animation-delay: 0.4s">5°C ~ 9°C</span>
+                </button>
+                <p>↕ 1월 2월 12월 ↕</p>
+
+
+                <button type="button" onclick="location.href = '0056purple.html'">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgba(155, 89, 182, 0.47)"
+                        class="bi bi-stop-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M5 3.5h6A1.5 1.5 0 0 1 12.5 5v6a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 11V5A1.5 1.5 0 0 1 5 3.5z" />
+                    </svg>
+                    <span style="animation-delay: 0.5s">5°C ↓</span>
+                </button>
+
+
+
+            </nav>
+            <footer class="sidebar-footer">
+                <button type="button" onclick="location.href = '003login.html'">
+                    <span>Login</span>
+                </button>
+
+            </footer>
+        </div>
+    </aside>
+    <!--사이드바 끝-->
+
+
+
+
+    <div class="maintext">
+        <h3 style="color:blue">추움 5C°~9C°</h3>
+        <div class="dropdown">
+            <button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                성별
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" style="background-color: rgba(0, 0, 255, 0.349) !important;">
+                <li><a class="dropdown-item" href="0055blue.html">남성</a></li>
+                <li><a class="dropdown-item" href="0055bluef.html">여성</a></li>
+            </ul>
+        </div><br><br><br><br>
+        <h4>&nbsp남성 °Clothes</h4>
+
+        <!-- 선택바 시작 -->
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                    type="button" role="tab" aria-controls="nav-home" aria-selected="true">상의</button>
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                    type="button" role="tab" aria-controls="nav-profile" aria-selected="false">하의</button>
+                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                    type="button" role="tab" aria-controls="nav-contact" aria-selected="false">기타</button>
+            </div>
+        </nav></br>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <!--375*404-->
+
+                    <div class="col">
+                        <!--옷1-->
+                        <div class="card h-100">
+                            <img class="card image" src="blue/기모맨투맨.jpg" class="card-img-top" alt="...">
+                            <div class="card-img-overlay">
+                                <a class="card-title" href="fashion5-1.html">기모맨투맨</a>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <!--옷2-->
+                        <div class="card h-100">
+                            <img class="card image" src="blue/기모후드티.jpg" class="card-img-top" alt="...">
+                            <div class="card-img-overlay">
+                                <a class="card-title" href="fashion5-2.html">기모후드티</a>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                   
+
+                    <div class="col">
+                        <!--옷3-->
+                        <div class="card h-100">
+                            <img class="card image" src="blue/무스탕.jpg" class="card-img-top" alt="...">
+                            <div class="card-img-overlay">
+                                <a class="card-title" href="fashion5-3.html">무스탕</a>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <!--옷4-->
+                        <div class="card h-100">
+                            <img class="card image" src="blue/스웨터.jpg" class="card-img-top" alt="...">
+                            <div class="card-img-overlay">
+                                <a class="card-title" href="fashion5-4.html">스웨터</a>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <!--옷5-->
+                        <div class="card h-100">
+                            <img class="card image" src="blue/야상.jpg" class="card-img-top" alt="...">
+                            <div class="card-img-overlay">
+                                <a class="card-title" href="fashion5-5.html">야상</a>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <!--옷6-->
+                        <div class="card h-100">
+                            <img class="card image" src="blue/코트.jpg" class="card-img-top" alt="...">
+                            <div class="card-img-overlay">
+                                <a class="card-title" href="fashion5-6.html">코트</a>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <!--옷7-->
+                        <div class="card h-100">
+                            <img class="card image" src="blue/패딩.jpg" class="card-img-top" alt="...">
+                            <div class="card-img-overlay">
+                                <a class="card-title" href="fashion5-7.html">패딩</a>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <!--옷8-->
+                        <div class="card h-100">
+                            <img class="card image" src="blue/항공점퍼.jpg" class="card-img-top" alt="...">
+                            <div class="card-img-overlay">
+                                <a class="card-title" href="fashion5-8.html">항공점퍼</a>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <!--옷9-->
+                        <div class="card h-100">
+                            <img class="card image" src="blue/후리스.jpg" class="card-img-top" alt="...">
+                            <div class="card-img-overlay">
+                                <a class="card-title" href="fashion5-9.html">후리스</a>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <!--옷2-->
+                        <div class="card h-100">
+                            <img class="card image" src="blue/두꺼운니트.jpg" class="card-img-top" alt="...">
+                            <div class="card-img-overlay">
+                                <a class="card-title" href="fashion5-10.html">두꺼운니트</a>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <!--375*404-->
+
+                    <div class="col">
+                        <!--옷1-->
+                        <div class="card h-100">
+                            <img class="card image" src="blue/기모바지.jpg" class="card-img-top" alt="...">
+                            <div class="card-img-overlay">
+                                <a class="card-title" href="fashion5-11.html">기모바지</a>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <!--옷2-->
+                        <div class="card h-100">
+                            <img class="card image" src="blue/모직바지.jpg" class="card-img-top" alt="...">
+                            <div class="card-img-overlay">
+                                <a class="card-title" href="fashion5-12.html">모직바지</a>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <!--옷3-->
+                        <div class="card h-100">
+                            <img class="card image" src="blue/청바지.jpg" class="card-img-top" alt="...">
+                            <div class="card-img-overlay">
+                                <a class="card-title" href="fashion5-13.html">청바지</a>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <!--옷4-->
+                        <div class="card h-100">
+                            <img class="card image" src="" class="card-img-top" onerror="this.onerror=null; this.src='replace.jpg';">
+                            <div class="card-img-overlay">
+                                <a class="card-title" href="fashion5.html">하의4</a>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <!--옷5-->
+                        <div class="card h-100">
+                            <img class="card image" src="" class="card-img-top" onerror="this.onerror=null; this.src='replace.jpg';">
+                            <div class="card-img-overlay">
+                                <a class="card-title" href="fashion5.html">하의5</a>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <!--375*404-->
+
+                    <div class="col">
+                        <!--옷1-->
+                        <div class="card h-100">
+                            <img class="card image" src="blue/농구화.jpg" class="card-img-top" alt="...">
+                            <div class="card-img-overlay">
+                                <a class="card-title" href="fashion5-14.html">농구화</a>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <!--옷2-->
+                        <div class="card h-100">
+                            <img class="card image" src="" class="card-img-top" onerror="this.onerror=null; this.src='replace.jpg';">
+                            <div class="card-img-overlay">
+                                <a class="card-title" href="fashion5.html">기타2</a>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <!--옷3-->
+                        <div class="card h-100">
+                            <img class="card image" src="" class="card-img-top" onerror="this.onerror=null; this.src='replace.jpg';">
+                            <div class="card-img-overlay">
+                                <a class="card-title" href="fashion5.html">기타3</a>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <!--옷4-->
+                        <div class="card h-100">
+                            <img class="card image" src="" class="card-img-top" onerror="this.onerror=null; this.src='replace.jpg';">
+                            <div class="card-img-overlay">
+                                <a class="card-title" href="fashion5.html">기타4</a>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <!--옷5-->
+                        <div class="card h-100">
+                            <img class="card image" src="" class="card-img-top" onerror="this.onerror=null; this.src='replace.jpg';">
+                            <div class="card-img-overlay">
+                                <a class="card-title" href="fashion5.html">기타5</a>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 선택바 끝 -->
+    </div>
+
+
+
+
+
+    <p class="text-dev">Developed by CHC</a></p>
+
+</body>
+
+</html>
